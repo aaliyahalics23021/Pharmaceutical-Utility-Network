@@ -1,0 +1,98 @@
+@import "./styles/fonts.css";
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Instrument Serif", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  
+  --color-primary-bg: #FFFFFF;
+  --color-primary-text: #000000;
+  --color-secondary-text: #6F6F6F;
+  --color-border-line: #E8E8E8;
+  --color-subtle-bg: #F7F7F5;
+  
+  --color-success-green: #14532D;
+  --color-success-green-light: #F0FDF4;
+  --color-warning-amber: #78350F;
+  --color-warning-amber-light: #FEF3C7;
+}
+
+/* Custom global styles for smooth premium feel */
+html {
+  scroll-behavior: smooth;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+/* Custom scrollbar to keep layout clean and minimal */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+::-webkit-scrollbar-thumb {
+  background: #E8E8E8;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6F6F6F;
+}
+
+/* Custom utilities for editorial visuals */
+.text-balance {
+  text-wrap: balance;
+}
+
+.editorial-container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .editorial-container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+/* Custom Animations */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 0.8; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+
+.animate-dash {
+  stroke-dasharray: 8 4;
+  animation: dash 2s linear infinite;
+}
+
+/* Cinematic fade effect */
+.video-overlay {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(255,255,255,1) 85%);
+}

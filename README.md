@@ -162,56 +162,6 @@ The platform demonstrates tracking a pharmaceutical batch across different suppl
 
 > This project is an educational frontend simulation and does not perform real blockchain transactions.
 
----
-
-# 📁 Screenshot Folder Structure
-
-Create a folder named exactly:
-
-```text
-screenshot
-```
-
-Inside it, upload your screenshots with **these exact filenames**:
-
-```text
-screenshot/
-├── 01-pun-landing-page.png
-├── 02-traditional-supply-chain.png
-├── 03-physical-vs-digital-ledger.png
-├── 04-manufacturing-checkpoint.png
-├── 05-quality-checkpoint.png
-├── 06-distributor-logistics.png
-├── 07-warehouse-storage.png
-├── 08-pharmacy-verification.png
-├── 09-block-journal.png
-└── 10-pbft-consensus.png
-```
-
-The README image paths are already connected to these files. For example:
-
-```md
-![PUN Landing Page](screenshot/01-pun-landing-page.png)
-```
-
-```md
-![PBFT Consensus](screenshot/10-pbft-consensus.png)
-```
-
----
-
-# 🎯 Project Objective
-
-The Pharmaceutical Utility Network demonstrates how blockchain principles can be applied to pharmaceutical supply-chain integrity through **traceability, cryptographic hash linking, permissioned participation, PBFT consensus, and rule-based transaction validation**.
-
----
-
-# ⚠️ Project Scope
-
-This project is a **conceptual frontend simulation** created for educational purposes. It uses simulated supply-chain data and interactions to demonstrate the proposed blockchain-based approach rather than operating as a live production blockchain network.
-
----
-
 ## 👩‍💻 Project
 
 **Supply Chain: Protect Pharmaceutical Product Integrity with the Pharmaceutical Utility Network**
